@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <input placeholder="Enter Input 1" id="inp1">
+  <input placeholder="Enter Input 2" id="inp2">
+
+  <p id="p"></p>
+
+  <button id="add">Add</button>
+  <button id="sub">Sub</button>
+  <button id="mul">Mul</button>
+  <button id="div">Div</button>
+
+
+  <script>
+
+    const inp1 = document.getElementById('inp1');
+    const inp2 = document.getElementById('inp2');
+
+    const addBtn = document.getElementById('add');
+    const subBtn = document.getElementById('sub');
+    const mulBtn = document.getElementById('mul');
+    const divBtn = document.getElementById('div');
+
+    const p = document.getElementById('p');
+
+
+    // Addition
+    addBtn.addEventListener('click', () => {
+
+      let a = Number(inp1.value);
+      let b = Number(inp2.value);
+
+      p.textContent = a + b;
+
+    });
+
+
+    // Subtraction
+    subBtn.addEventListener('click', () => {
+
+      let a = Number(inp1.value);
+      let b = Number(inp2.value);
+
+      p.textContent = a - b;
+
+    });
+
+
+    // Multiplication
+    mulBtn.addEventListener('click', () => {
+
+      let a = Number(inp1.value);
+      let b = Number(inp2.value);
+
+      p.textContent = a * b;
+
+    });
+
+
+    // Division
+    divBtn.addEventListener('click', () => {
+
+      let a = Number(inp1.value);
+      let b = Number(inp2.value);
+
+      if (b !== 0) {
+        p.textContent = a / b;
+      } else {
+        p.textContent = "Cannot divide by zero";
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
