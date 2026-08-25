@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Example</title>
+
+  <style>
+    /* Outer div - scrollable box */
+    #outer {
+      width: 400px;
+      height: 150px;
+      overflow: auto;
+      border: 3px solid black;
+    }
+
+    /* Inner div - bigger than outer div */
+    #inner {
+      width: 1000px;
+      height: 500px;
+      background-color: lightblue;
+    }
+
+    #inner p {
+      width: 900px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="scrollTo">Scroll To</button>
+  <button id="scrollBy">Scroll By</button>
+
+  <!-- Outer DIV -->
+  <div id="outer">
+
+    <!-- Inner DIV -->
+    <div id="inner">
+
+      <!-- P inside inner DIV -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Expedita odio impedit labore dolores illum sint harum aperiam
+        accusantium voluptate nam nulla voluptatum repudiandae illo,
+        recusandae quo voluptatibus distinctio praesentium earum.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Expedita odio impedit labore dolores illum sint harum aperiam
+        accusantium voluptate nam nulla voluptatum repudiandae illo,
+        recusandae quo voluptatibus distinctio praesentium earum.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Expedita odio impedit labore dolores illum sint harum aperiam
+        accusantium voluptate nam nulla voluptatum repudiandae illo,
+        recusandae quo voluptatibus distinctio praesentium earum.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Expedita odio impedit labore dolores illum sint harum aperiam
+        accusantium voluptate nam nulla voluptatum repudiandae illo,
+        recusandae quo voluptatibus distinctio praesentium earum.
+      </p>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    const scrollTo = document.getElementById("scrollTo");
+    const scrollBy = document.getElementById("scrollBy");
+
+    const outer = document.getElementById("outer");
+
+
+    // Scroll to a specific position
+    scrollTo.addEventListener("click", function () {
+
+      outer.scrollTo({
+        top: 200,
+        left: 500,
+        behavior: "smooth"
+      });
+
+    });
+
+
+    // Scroll relative to current position
+    scrollBy.addEventListener("click", function () {
+
+      outer.scrollBy({
+        top: 50,
+        left: 100,
+        behavior: "smooth"
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
