@@ -1,0 +1,3 @@
+export function one() {
+  console.log("This is file 1");
+}

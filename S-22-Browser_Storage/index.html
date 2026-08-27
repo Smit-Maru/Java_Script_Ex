@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Storage Demo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Browser Storage Demo</h1>
+      
+      <!-- USER FORM -->
+      <div class="card">
+        <h2>User Information</h2>
+        <form id="userForm">
+          <input
+          type="text"
+          id="name"
+          placeholder="Enter Name"
+          required
+          >
+          <input
+          type="email"
+          id="email"
+          placeholder="Enter Email"
+          required
+          >
+          <input
+          type="number"
+          id="age"
+          placeholder="Enter Age"
+          required
+          >
+          <button type="submit">
+            Save User
+          </button>
+        </form>
+      </div>
+      
+    <!-- Output Of Data Which You Store in Local Data -->
+    <div class="card">
+      <h2>Output Of Data Which You Store in Local Data</h2>
+      <pre id="output">Click a button to see data...</pre>
+    </div>
+    
+    <!-- LOCAL STORAGE -->
+    <div class="card">
+      <h2>1. Local Storage</h2>
+      <button onclick="saveLocalStorage()">Save</button>
+      <button onclick="getLocalStorage()">Get</button>
+      <button onclick="clearAllLocalStorage()">Remove</button>
+    </div>
+
+    <!-- SESSION STORAGE -->
+    <div class="card">
+      <h2>2. Session Storage</h2>
+      <button onclick="saveSessionStorage()">Save</button>
+      <button onclick="getSessionStorage()">Get</button>
+      <button onclick="removeSessionStorage()">Remove</button>
+    </div>
+
+
+    <!-- COOKIES -->
+    <div class="card">
+      <h2>3. Cookies</h2>
+      <button onclick="saveCookie()">Save</button>
+      <button onclick="getCookie()">Get</button>
+      <button onclick="removeCookie()">Remove</button>
+    </div>
+
+
+    <!-- INDEXED DB -->
+    <div class="card">
+      <h2>4. IndexedDB</h2>
+      <button onclick="saveIndexedDB()">Save</button>
+      <button onclick="getIndexedDB()">Get All Users</button>
+      <button onclick="deleteIndexedDB()">Delete User</button>
+    </div>
+
+
+    <!-- CACHE STORAGE -->  
+    <div class="card">
+      <h2>5. Cache Storage</h2>
+      <button onclick="saveCacheStorage()">Save</button>
+      <button onclick="getCacheStorage()">Get</button>
+      <button onclick="removeCacheStorage()"></button>
+    </div>
+
+
+    <!-- Output Of Data Which You Get From Storage -->
+    <div class="card">
+      <h2>Output Of Data Which You Get From Storage</h2>
+      <pre id="SaveOutput">Click a button to see data...</pre>
+
+      <h2>Output Of Data Which You Get From Storage</h2>
+      <pre id="GetOutput">Click a button to see data...</pre>
+    </div>
+
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
