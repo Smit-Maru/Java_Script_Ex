@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #222;
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  background: white;
+  width: 500px;
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+progress {
+  width: 100%;
+  height: 30px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background: #ff0066;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d60057;
+}
+
+#bonus-life {
+  color: red;
+  font-weight: bold;
+}
