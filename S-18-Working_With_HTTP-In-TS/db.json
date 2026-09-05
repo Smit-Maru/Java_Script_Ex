@@ -1,0 +1,17 @@
+{
+  "students": [
+    {
+      "name": "Smit Maru",
+      "age": 21,
+      "course": "CSE",
+      "id": "ib_PNcf8idg"
+    },
+    {
+      "name": "Prominent Pixel",
+      "age": 19,
+      "course": "AWS",
+      "id": "tohlOZCAtAU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
